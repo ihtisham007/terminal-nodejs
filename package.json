@@ -1,15 +1,12 @@
 {
   "name": "termno",
   "version": "0.0.1",
-  "description": "",
+  "description": "This package is used for file processing and convert file into  SQL or JSON",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "chalk": "^5.2.0"
-  }
+  "license": "ISC"
 }
