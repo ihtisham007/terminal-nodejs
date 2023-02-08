@@ -1,12 +1,24 @@
 {
   "name": "termno",
   "version": "0.0.1",
+  "author" : "ihtisham Bashir <ihtisham.bashir007@gmail.com>",
   "description": "This package is used for file processing and convert file into  SQL or JSON",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "terminal",
+    "fileprocessing",
+    "csv",
+    "json",
+    "sql",
+    "csvtojson",
+    "csvtosql",
+    "search"
+  ],
   "license": "ISC"
 }
