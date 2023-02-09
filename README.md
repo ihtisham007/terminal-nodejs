@@ -12,27 +12,14 @@ Get data from large file and `Search` from it also generate `SQL` and `JSON`
 
 ### Usage/Example
   
-### clone project
+### install as Globally
 
-`git clone https://github.com/ihtisham007/terminal-nodejs.git`
-
-### Navigate to folder
-
-`cd terminal-nodejs`
+`npm i --global termno`
 
 ### Example(1) Get file and size if it. 
 
-`node index --file directories/fileName.csv`
+`termno --file directories/fileName.csv`
 
-```
---file or -f 
-same for searching file 
+### Example(2) create sql file from csv
 
-then path/fileName with extension
-
-```
-
-
-
-
-
+`termno --file userData.csv --generate sql --output newsql.sql`
