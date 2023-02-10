@@ -14,7 +14,7 @@ Get data from large file and `Search` from it also generate `SQL` and `JSON`
   
 ### install as Globally
 
-`npm i --global termno`
+`npm install --global consfile`
 
 ### Example(1) Get file and size if it. 
 
