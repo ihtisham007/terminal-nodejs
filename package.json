@@ -1,7 +1,7 @@
 {
   "name": "consfile",
   "version": "0.0.3",
-  "author" : "ihtisham Bashir <ihtisham.bashir007@gmail.com>",
+  "author": "ihtisham Bashir <ihtisham.bashir007@gmail.com>",
   "description": "This package is used for file processing and convert file into  SQL or JSON",
   "main": "index.js",
   "scripts": {
