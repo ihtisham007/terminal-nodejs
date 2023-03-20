@@ -15,6 +15,8 @@ const setAllFlags = (arrOfArgs) =>{
             flagsValues['o'] = arrOfArgs[i+1]
         else if(arrOfArgs[i] === '-v' || arrOfArgs[i] === '--version')
             flagsValues['v'] = `version ${packageJson.version}`
+        else if(arrOfArgs[i] === '-h' || arrOfArgs[i] === '--help')
+            flagsValues['h'] = `help`
     }
 
     return flagsValues;

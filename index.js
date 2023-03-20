@@ -38,13 +38,13 @@ if('f' in flagsValues) {
                 //     console.log('\x1b[31m%s\x1b[0m',chunkSplit[i])
             }
             else if('g' in flagsValues && !('o' in flagsValues) && i>0){
-                console.log(`INSERT INTO DIMONLOOKUPSEX8277 (${header.replaceAll('\n','')}) VALUES (${chunkSplit[i]})`)
+                console.log(`INSERT INTO ${flagsValues['f']} (${header.replaceAll('\n','')}) VALUES (${chunkSplit[i]})`)
             }
             else if('g' in flagsValues && ('o' in flagsValues && flagsValues['g'] === 'sql') && i>0){
     
                 chunkSplit[i] = chunkSplit[i].replace('\n\r','')
                 chunkSplit[i]= chunkSplit[i].trim();
-                const getSQl = `INSERT INTO DIMONLOOKUPSEX8277 (${header}) VALUES (${chunkSplit[i]})\n`;
+                const getSQl = `INSERT INTO ${flagsValues['f']} (${header}) VALUES (${chunkSplit[i]})\n`;
                 if(chunkSplit[i].length>0){
                     fs.appendFile(flagsValues['o'],getSQl, (err) => {
                         if (err) throw err;
@@ -72,4 +72,8 @@ if('f' in flagsValues) {
 }
 else if ('v' in flagsValues)
     console.log(flagsValues['v'])
+else if('h' in flagsValues){
+    const helpFile = fs.readFileSync('./bin/help.txt', 'utf8');
+    console.log(helpFile);
+}
 
