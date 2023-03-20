@@ -20,6 +20,10 @@ Get data from large file and `Search` from it also generate `SQL` and `JSON`
 
 `consfile --file directories/fileName.csv`
 
-### Example(2) create sql file from csv
+### Example(2) search from file
+
+`consfile -f directories/fileName.csv -s 123`
+
+### Example(3) create sql file from csv
 
 `consfile --file userData.csv --generate sql --output newsql.sql`
