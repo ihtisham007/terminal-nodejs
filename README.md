@@ -18,8 +18,8 @@ Get data from large file and `Search` from it also generate `SQL` and `JSON`
 
 ### Example(1) Get file and size if it. 
 
-`termno --file directories/fileName.csv`
+`consfile --file directories/fileName.csv`
 
 ### Example(2) create sql file from csv
 
-`termno --file userData.csv --generate sql --output newsql.sql`
+`consfile --file userData.csv --generate sql --output newsql.sql`
