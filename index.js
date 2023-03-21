@@ -72,20 +72,7 @@ if('f' in flagsValues) {
 }
 else if ('v' in flagsValues)
     console.log(flagsValues['v'])
-else if('h' in flagsValues){
-    //const helpFile = fs.readFileSync('./bin/help.txt', 'utf8');
-    console.log(`
-    Usage: consfile [options]
+else if('h' in flagsValues)
+    console.log(fs.readFileSync('./cmd/help.txt', 'utf8'));
 
-    Options:
-      -h, --help                                            show help
-      -v, --version                                         display version
-      -f, --file [PATH]                                     display the size of any type of file in (MB)
-      -f, --file [PATH] --search                            display full text from the file 
-      -f, --file [PATH] --search <VALUES>                   display only searched text from the file
-      -f, --file [PATH] --generate sql                      generate sql in console from the file
-      -f, --file [PATH] --generate sql --output <FILE.sql>  generate sql and save it to any file
-      
-    `);
-}
 
