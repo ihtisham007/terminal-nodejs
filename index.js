@@ -73,6 +73,6 @@ if('f' in flagsValues) {
 else if ('v' in flagsValues)
     console.log(flagsValues['v'])
 else if('h' in flagsValues)
-    console.log(fs.readFileSync('./cmd/help.txt', 'utf8'));
+    console.log(fs.readFileSync(`${__dirname}/cmd/help.txt`, 'utf8'));
 
 
